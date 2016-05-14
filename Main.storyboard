@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F31a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rmG-ul-fCq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2Bw-WN-1He">
+            <objects>
+                <viewController id="rmG-ul-fCq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kWs-yc-47I"/>
+                        <viewControllerLayoutGuide type="bottom" id="DC8-Jg-BJR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dwD-8c-pbs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RiV-s6-Ngv">
+                                <rect key="frame" x="180" y="96" width="240" height="408"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwk-Rl-CuN">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="87g-Pa-3TW"/>
+                                            <constraint firstAttribute="width" constant="240" id="FrX-4f-I9V"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="sCZ-cx-PrW" kind="embed" id="BOR-rD-agl"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="go8-tb-tn2">
+                                        <rect key="frame" x="0.0" y="140" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="6EC-0V-4XW"/>
+                                            <constraint firstAttribute="height" constant="128" id="Qxn-jQ-I6T"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="sCZ-cx-PrW" kind="embed" id="Jf3-1M-tW4"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90F-nz-Rcb">
+                                        <rect key="frame" x="0.0" y="280" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="TEG-el-YiP"/>
+                                            <constraint firstAttribute="height" constant="128" id="Ust-2w-eIM"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="sCZ-cx-PrW" kind="embed" id="Ze3-Ru-aLH"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RiV-s6-Ngv" firstAttribute="centerY" secondItem="dwD-8c-pbs" secondAttribute="centerY" id="AAk-0M-JwQ"/>
+                            <constraint firstItem="RiV-s6-Ngv" firstAttribute="centerX" secondItem="dwD-8c-pbs" secondAttribute="centerX" id="tNu-eo-dhe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jse-Fb-yJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="643"/>
+        </scene>
+        <!--Counter-->
+        <scene sceneID="bJC-sY-K4R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Counter" id="sCZ-cx-PrW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qpz-dv-iSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187.5" y="614"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ze3-Ru-aLH"/>
+    </inferredMetricsTieBreakers>
+</document>
